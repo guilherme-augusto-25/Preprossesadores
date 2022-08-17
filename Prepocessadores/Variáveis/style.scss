@@ -1,0 +1,30 @@
+$color-red: red;
+
+$width: 400px;
+$height: 150px;
+$wd-especial: 700px;
+
+
+ @mixin div-especial {
+    height: 200px;
+}
+
+.div1 {
+    @include div-especial();
+
+    width: $wd-especial;
+    margin-bottom: 10px;
+    background-color: red;
+}
+.div2 {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+.div3 {
+    width: $width;
+    height: $height;
+    margin-bottom: 10px;
+    background-color: salmon;
+}

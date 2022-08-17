@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["_colors.scss"],"sourcesContent":["$colors: ( \"primary\": tomato, \"secondary\": pink);\r\n@function bg-colors($key) {\r\n    @if not map-has-key($colors, $key) {\r\n        @warn \"Esse valor #{$key} não existe!\";\r\n    }\r\n    @return map-get($colors, $key);\r\n}"],"file":"_colors.css"}
